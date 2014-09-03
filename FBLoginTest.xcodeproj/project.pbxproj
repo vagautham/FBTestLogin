@@ -21,6 +21,7 @@
 		04EA59E219B78BCF007DCFD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EA59C419B78BCF007DCFD0 /* UIKit.framework */; };
 		04EA59EA19B78BCF007DCFD0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04EA59E819B78BCF007DCFD0 /* InfoPlist.strings */; };
 		04EA59EC19B78BCF007DCFD0 /* FBLoginTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA59EB19B78BCF007DCFD0 /* FBLoginTestTests.m */; };
+		04EA59F619B78DD8007DCFD0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EA59F519B78DD8007DCFD0 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		04EA59E719B78BCF007DCFD0 /* FBLoginTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBLoginTestTests-Info.plist"; sourceTree = "<group>"; };
 		04EA59E919B78BCF007DCFD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04EA59EB19B78BCF007DCFD0 /* FBLoginTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBLoginTestTests.m; sourceTree = "<group>"; };
+		04EA59F519B78DD8007DCFD0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04EA59C319B78BCF007DCFD0 /* CoreGraphics.framework in Frameworks */,
+				04EA59F619B78DD8007DCFD0 /* FacebookSDK.framework in Frameworks */,
 				04EA59C519B78BCF007DCFD0 /* UIKit.framework in Frameworks */,
 				04EA59C119B78BCF007DCFD0 /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +104,7 @@
 		04EA59BF19B78BCF007DCFD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04EA59F519B78DD8007DCFD0 /* FacebookSDK.framework */,
 				04EA59C019B78BCF007DCFD0 /* Foundation.framework */,
 				04EA59C219B78BCF007DCFD0 /* CoreGraphics.framework */,
 				04EA59C419B78BCF007DCFD0 /* UIKit.framework */,
@@ -376,6 +380,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/gauthamva/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBLoginTest/FBLoginTest-Prefix.pch";
 				INFOPLIST_FILE = "FBLoginTest/FBLoginTest-Info.plist";
@@ -389,6 +398,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/gauthamva/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBLoginTest/FBLoginTest-Prefix.pch";
 				INFOPLIST_FILE = "FBLoginTest/FBLoginTest-Info.plist";
